@@ -1,8 +1,15 @@
 # beamer-universiteit-leiden
 An unofficial LaTeX beamer template for scientific presentations in Universiteit Leiden layout. 
-A working example showcasing some of the functionality is provided in minimal.tex.
-Needs to be compiled with xelatex in order to support fonts.
+A working example showcasing some of the functionality is provided in [minimal.tex](minimal.tex).
 
-##Requirements
-Recent version of FontSpec to enable font-fallback.
-The fonts Vestula or Minion are recommended.
+A [matplotlib-style file](leidenuniv.mplstyle) is provided. Put the file in the same directory as you plotting code and add the following to the plot script to use:
+```
+import matplotlib.pyplot as plt
+plt.style.use('./leidenuniv.mplstyle')
+```
+
+
+## Requirements
+- Any presentation needs to be compiled using `xelatex` in order to support the fonts.
+- Recent version of FontSpec to enable font-fallback.
+- The fonts *Vestula* or *Minion* are recommended for layout, but can not be redistributed.
