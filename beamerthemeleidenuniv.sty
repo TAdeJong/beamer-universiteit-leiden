@@ -1,9 +1,11 @@
 \mode<presentation>
 
-
+\newtranslation[to=Dutch]{Discover the world at Leiden University}{Universiteit Leiden. Bij ons leer je de wereld kennen}
+\newtranslation[to=English]{Discover the world at Leiden University}{Discover the word at Leiden University}
 \DeclareOptionBeamer{style}{
     \PassOptionsToPackage{style=#1}{beamercolorthemeleidenuniv}
 }
+\RequirePackage{babel}
 \ExecuteOptionsBeamer{style=blue}
 \ProcessOptionsBeamer
 
@@ -33,7 +35,7 @@
 	\leavevmode
 	\begin{beamercolorbox}[wd=.85\paperwidth,ht=2.25ex,dp=1ex,left]{section in head/foot}
 		\usebeamerfont{section in head/foot}
-		{\hskip3ex Discover the world at Leiden University}
+		{\hskip3ex \translate{Discover the world at Leiden University}}
 	\end{beamercolorbox}%
 	\begin{beamercolorbox}[wd=.15\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}
 		\usebeamerfont{date in head/foot}
