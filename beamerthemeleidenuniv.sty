@@ -1,0 +1,61 @@
+\mode<presentation>
+
+
+\DeclareOptionBeamer{style}{
+    \PassOptionsToPackage{style=#1}{beamercolorthemeleidenuniv}
+}
+\ExecuteOptionsBeamer{style=blue}
+\ProcessOptionsBeamer
+
+\usecolortheme{leidenuniv}
+\usecolortheme{rose}
+%\useoutertheme{infolines}
+\useinnertheme{default}
+%Set fonts if they are isntalled
+\usepackage{fontspec}
+\IfFontExistsTF{Vestula}{
+	\setsansfont{Vestula}
+	}{
+	\IfFontExistsTF{Minion}{
+		\setsansfont{Minion}
+		}{
+		}
+	}
+\usefonttheme{professionalfonts}
+\setbeamertemplate{footline}
+{%
+	\leavevmode
+	\begin{beamercolorbox}[wd=.85\paperwidth,ht=2.25ex,dp=1ex,left]{section in head/foot}
+		\usebeamerfont{section in head/foot}
+		{\hskip2ex Discover the world at Leiden University}
+	\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=.15\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}
+		\usebeamerfont{date in head/foot}
+		{\insertframenumber{} / \inserttotalframenumber\hspace*{5ex}}
+	\end{beamercolorbox}
+}
+
+\defbeamertemplate*{title page}{leidenuniv}[1][]
+{
+	\begin{beamercolorbox}[wd=1\paperwidth,ht=0.6\paperheight,left,sep=1ex]{title}
+		  \usebeamerfont{title}\hskip0.15\paperwidth \inserttitle\par
+		  \usebeamerfont{subtitle}\hskip0.15\paperwidth\usebeamercolor{subtitle}\insertsubtitle\par
+		  \begin{center}
+		  \usebeamercolor{titlegraphic}\inserttitlegraphic
+		  \end{center}
+	\end{beamercolorbox}
+	\begin{beamercolorbox}[wd=1\paperwidth,left,sep=1ex]{author}
+		  \hskip0.15\paperwidth\usebeamerfont{author}\insertauthor
+		  \hskip0.15\paperwidth
+		  \parbox{0.4\paperwidth}{
+			  \usebeamerfont{institute}\insertinstitute\par
+			  \usebeamerfont{date}\insertdate\par
+		  }
+	\end{beamercolorbox}
+	\vfill
+	\begin{beamercolorbox}[wd=1\paperwidth,left,sep=1ex]{date}
+		  \hskip0.05\paperwidth\includegraphics[height=0.15\paperheight]{fulllogo.png}
+	\end{beamercolorbox}
+}
+\mode
+<all>

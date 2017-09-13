@@ -1,0 +1,51 @@
+\mode<presentation>
+
+\DeclareOptionBeamer{style}{\def\beamer@leidenuniv@style{#1}}
+\ExecuteOptionsBeamer{style=blue} % blue will be default if nothing is given
+\ProcessOptionsBeamer
+
+%Colors as defined on page 12 of http://media.leidenuniv.nl/legacy/compleet-huisstijlhandboek.pdf
+\definecolor{LEIblue}{RGB}{0,17,88}
+\definecolor{LEIred}{RGB}{190,25,8}
+\definecolor{LEIorange}{RGB}{244,110,50}
+\definecolor{LEIlightgreen}{RGB}{158,186,46}
+\definecolor{LEIdarkgreen}{RGB}{44,113,45}
+\definecolor{LEIturquoise}{RGB}{52,163,169}
+\definecolor{LEIlightblue}{RGB}{92,177,235}
+\definecolor{LEIviolet}{RGB}{176,32,121}
+
+
+\def\beamer@leidenuniv@stylelumc{lumc}%
+\def\beamer@leidenuniv@styleblue{blue}%
+\def\beamer@leidenuniv@stylefwn{fwn}%
+
+\ifx\beamer@leidenuniv@style\beamer@leidenuniv@stylelumc%
+	\setbeamercolor*{palette primary}{fg=white,bg=LEIlightblue}
+\else% 
+	\ifx\beamer@leidenuniv@style\beamer@leidenuniv@stylefwn%
+		\setbeamercolor*{palette primary}{fg=white,bg=LEIorange}
+	\else% 
+	  \setbeamercolor*{palette primary}{fg=white,bg=LEIlightblue}
+	\fi%
+\fi%
+\setbeamercolor{structure}{fg=LEIblue,bg=white}
+%\setbeamercolor*{palette primary}{fg=white,bg=LEIorange}
+\setbeamercolor*{palette secondary}{fg=white,bg=LEIblue}
+\setbeamercolor*{palette tertiary}{fg=LEIlightblue,bg=LEIblue}
+\setbeamercolor*{palette quarternary}{bg=white,fg=black}
+\setbeamercolor*{frametitle}{bg=white,fg=LEIblue}
+\setbeamerfont{frametitle}{series=\bfseries}
+\setbeamercolor{framesubtitle}{fg=LEIlightblue}
+\setbeamerfont{framesubtitle}{series=\mdseries}
+\setbeamercolor{title}{fg=white,bg=LEIblue}
+\setbeamerfont{title}{series=\bfseries,size=\huge}
+\setbeamerfont{subtitle}{series=\mdseries}
+\setbeamercolor*{author}{parent=palette primary}
+\setbeamercolor*{alerted text}{fg=LEIorange}
+\setbeamercolor*{example text}{fg=LEIdarkgreen}
+\setbeamercolor*{section in head/foot}{parent=palette secondary}
+\setbeamercolor*{date in head/foot}{parent=palette primary}
+
+
+\mode
+<all>
