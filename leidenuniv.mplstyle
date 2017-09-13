@@ -1,0 +1,8 @@
+#Set font to correspond to the presentation
+text.usetex : False
+font.family     : sans-serif
+font.sans-serif : Vestula, Minion, sans-serif
+#Set the color cycler to the Universiteit Leiden colors
+axes.prop_cycle : cycler('color', ['5cb1eb','f46e32','2c712d','34a3a9','001158','b02079','be1908','9eba2e',])
+#If you use latex anyway, save pdf's to include
+savefig.format  : pdf
