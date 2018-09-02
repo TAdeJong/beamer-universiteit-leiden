@@ -1,7 +1,7 @@
 \mode<presentation>
 
 \newtranslation[to=Dutch]{Discover the world at Leiden University}{Universiteit Leiden. Bij ons leer je de wereld kennen}
-\newtranslation[to=English]{Discover the world at Leiden University}{Discover the word at Leiden University}
+\newtranslation[to=English]{Discover the world at Leiden University}{Discover the world at Leiden University} %Typo: word -> world
 \DeclareOptionBeamer{style}{
     \PassOptionsToPackage{style=#1}{beamercolorthemeleidenuniv}
 }
@@ -13,7 +13,7 @@
 \usecolortheme{rose}
 %\useoutertheme{infolines}
 \useinnertheme{default}
-%Set fonts if they are isntalled
+%Set fonts if they are installed
 \usepackage{fontspec}
 \IfFontExistsTF{Vestula}{
 	\setsansfont{Vestula}
@@ -45,9 +45,10 @@
 
 \defbeamertemplate*{title page}{leidenuniv}[1][]
 {
+	\vspace{-1pt}
 	\begin{beamercolorbox}[wd=1\paperwidth,ht=0.6\paperheight,left,sep=1ex]{title}
-		  \usebeamerfont{title}\hskip0.15\paperwidth \inserttitle\par
-		  \usebeamerfont{subtitle}\hskip0.15\paperwidth\usebeamercolor{subtitle}\insertsubtitle\par
+		  \usebeamerfont{title}\leftskip=0.15\paperwidth \noindent \inserttitle\par
+		  \usebeamerfont{subtitle}\usebeamercolor{subtitle}\insertsubtitle\par
 		  \begin{center}
 		  \usebeamercolor{titlegraphic}\inserttitlegraphic
 		  \end{center}
