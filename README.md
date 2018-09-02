@@ -1,5 +1,6 @@
 # beamer-universiteit-leiden
-An unofficial LaTeX beamer template for scientific presentations in Universiteit Leiden layout. 
+An unofficial LaTeX beamer template for scientific presentations in Universiteit Leiden layout, as described on [their website (Dutch only :-( )](http://huisstijl.leidenuniv.nl/nl/). 
+
 A working example showcasing some of the functionality is provided in [minimal.tex](minimal.tex).
 
 A [matplotlib-style file](leidenuniv.mplstyle) is provided. Put the file in the same directory as you plotting code and add the following to the plot script to use:
