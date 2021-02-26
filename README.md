@@ -1,5 +1,5 @@
 # beamer-universiteit-leiden
-An unofficial LaTeX beamer template for scientific presentations in Universiteit Leiden layout, as described on [their website (Dutch only :-( )](http://huisstijl.leidenuniv.nl/nl/). 
+An unofficial LaTeX beamer template for scientific presentations in Universiteit Leiden layout, as described on [their website](https://huisstijl.leidenuniv.nl/en/). 
 
 A working example showcasing some of the functionality is provided in [minimal.tex](minimal.tex).
 
